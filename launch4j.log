@@ -1,0 +1,12 @@
+
+
+Version:	3.9
+CmdLine:	C:\Users\rofiq\Desktop\exe\penggajianTarindo.exe --l4j-debug
+WOW64:		yes
+Working dir:	C:\Users\rofiq\Desktop\exe\.
+Bundled JRE:	bin\jre1.8.0_25
+Check launcher:	C:\Users\rofiq\Desktop\exe\bin\jre1.8.0_25\bin\javaw.exe (OK)
+Launcher:	C:\Users\rofiq\Desktop\exe\bin\jre1.8.0_25\bin\javaw.exe
+Launcher args:	-jar "C:\Users\rofiq\Desktop\exe\penggajianTarindo.exe"
+Args length:	55/32768 chars
+Exit code:	0

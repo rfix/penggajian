@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="fa9e9d6b-2ce6-4c10-a4f4-83a2acb66f2f">
+	<property name="ireport.zoom" value="0.9090909090909113"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from jabatan]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="gaji" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_jabatan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="205" splitType="Stretch">
+			<staticText>
+				<reportElement x="146" y="151" width="230" height="20" uuid="540a252a-b7e4-478a-99f7-d2ab634917c4"/>
+				<text><![CDATA[Jl. Emas No. 489 Growong Lor, Juwana (59185)]]></text>
+			</staticText>
+			<image>
+				<reportElement x="206" y="34" width="266" height="67" uuid="f43391e9-a8cc-43fc-a30a-587d0e1c524b"/>
+				<imageExpression><![CDATA["D:\\Kuliah\\java\\Penggajian\\src\\images\\tarindo.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="191" y="171" width="130" height="20" uuid="66116d81-bb77-4a61-9a8f-22cdd7514171"/>
+				<text><![CDATA[Telp / Fax. (0295) 471250]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="128" y="0" width="216" height="34" uuid="6b260cc0-877f-40c5-8b13-cfe443317ac8"/>
+				<textElement>
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laporan Data Jabatan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="93" y="113" width="326" height="20" uuid="8f06548c-90b4-48f4-9488-eab406dc8b82"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Perusahaan Pengecoran Kuningan dan Plastik]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="24" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="39" splitType="Stretch">
+			<rectangle>
+				<reportElement x="64" y="0" width="74" height="39" uuid="e478d870-27fc-42cd-8892-dcb26f7b024a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="138" y="0" width="146" height="39" uuid="ef7a33c2-dfd6-4bac-8cf7-5d383cfa9d70"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="138" y="0" width="146" height="39" uuid="aeb9e016-7370-4a91-bc47-124b03e907a2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[nama Jabatan]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="284" y="0" width="151" height="39" uuid="b7fbcdee-47c3-4290-947c-cae54548181f"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="284" y="0" width="151" height="39" uuid="8ab49af1-5fb1-4dc1-b6c8-7b9194b3b77f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[tunjangan jabatan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="64" y="1" width="74" height="38" uuid="10f1427e-de3a-4374-a862-cc6b6d3ea305"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[id]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="45" splitType="Stretch">
+			<rectangle>
+				<reportElement x="64" y="0" width="74" height="44" uuid="b9808116-6305-4688-b551-c2cb6d1c54e1"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="138" y="0" width="146" height="44" uuid="c2d10baf-de29-4ff4-a957-a7b76329634c"/>
+			</rectangle>
+			<textField>
+				<reportElement x="138" y="0" width="146" height="44" uuid="27d3e8a9-62f6-432d-a4da-c840030d42fe"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama_jabatan}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="284" y="0" width="151" height="44" uuid="3773df32-de35-4682-95ff-887f3f97c9a4"/>
+			</rectangle>
+			<textField>
+				<reportElement x="284" y="0" width="151" height="44" uuid="f7194d0a-ed59-405a-92a8-c2f00ecb6d26"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{gaji}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="64" y="0" width="74" height="39" uuid="7f5f8107-4240-47e0-93aa-4037c3444de4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
